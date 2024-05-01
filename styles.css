@@ -9,7 +9,7 @@
     font-family: QuireSans;
     src: url(fonts/QuireSans.ttf);
 }
-  
+
 body {
     background-color: rgb(255 255 255);
     font-family: QuireSans;
@@ -74,8 +74,9 @@ main {
     padding: 0 10%;
     height: 60vh;
     position: relative;
-    /* background-color: rgb(118, 226, 175); */
-    /* background: url("./body.png"); */
+    /* background: linear-gradient(to right, rgb(118, 226, 175) 0%, transparent, transparent); */
+        background: linear-gradient(to right,rgb(118, 226, 175) 0% , white 8%,transparent,transparent);
+
 }
 
 .media img {
@@ -150,6 +151,7 @@ footer {
 .socials {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 0 10%;
 
 
@@ -163,33 +165,42 @@ footer {
     bottom: 150px;
 }
 
+.soon {
+    margin-top: 20px;
+}
 
 @media(max-width:576px) {
-    .logo
-    {
+    .logo {
         margin: 0 auto;
     }
-    .logo img
-    {
+
+    .logo img {
         width: 200%;
         margin-left: -30px;
     }
+
     .nav {
         padding: 25px 0;
         font-size: small;
         height: fit-content;
         height: 100px;
     }
+
     main {
-        height: 70vh;
+        height: 67vh !important;
     }
 
     .socials {
         flex-direction: column;
     }
+
     ul {
         padding: 0;
         display: flex;
+    }
+    .soon
+    {
+        margin-top: 0
     }
 
 }
