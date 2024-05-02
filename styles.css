@@ -9,7 +9,10 @@
     font-family: QuireSans;
     src: url(fonts/QuireSans.ttf);
 }
-
+h1
+{
+    color: white;
+}
 body {
     background-color: rgb(255 255 255);
     font-family: QuireSans;
@@ -131,6 +134,10 @@ footer {
 
 .slider-item {
     height: 60vh !important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white !important;
     /* background-size: contain !important; */
     /* border: 2px solid green; */
 }
@@ -167,6 +174,12 @@ footer {
 
 .soon {
     margin-top: 20px;
+}
+
+.text-overlay
+{
+    background-color: #2d3e50;
+    padding: 10px;
 }
 
 @media(max-width:576px) {
