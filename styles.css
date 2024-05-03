@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); */
 @font-face {
     font-family: QuireSans;
     src: url(fonts/QuireSans.ttf);
@@ -12,6 +11,8 @@
 h1
 {
     color: white;
+    padding: 0;
+    margin: 0;
 }
 body {
     background-color: rgb(255 255 255);
@@ -136,7 +137,7 @@ footer {
     height: 60vh !important;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     color: white !important;
     /* background-size: contain !important; */
     /* border: 2px solid green; */
@@ -180,6 +181,15 @@ footer {
 {
     background-color: #2d3e50;
     padding: 10px;
+    height: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1
+{
+    font-size: xx-large;
 }
 
 @media(max-width:576px) {
@@ -210,11 +220,17 @@ footer {
     }
     .soon
     {
-        margin-top: 0
+        margin-top: 0;
+        padding: 0 10px;
+    }
+    h1 
+    {
+        font-size: x-large;
+        padding: 0;
+
     }
     footer {
         height: 200px;
-        /* padding-top: 50px; */
     }
 
 }
